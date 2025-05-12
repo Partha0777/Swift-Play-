@@ -17,6 +17,11 @@ struct ContentView: View {
         }
         .padding()
     }
+    
+    func mainFuntions(){
+        print("Hello")
+    }
+    
 }
 
 #Preview {

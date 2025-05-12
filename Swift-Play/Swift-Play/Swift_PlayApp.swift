@@ -9,6 +9,14 @@ import SwiftUI
 
 @main
 struct Swift_PlayApp: App {
+    
+    init() {
+        
+        print("App started!")
+        
+    }
+
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
