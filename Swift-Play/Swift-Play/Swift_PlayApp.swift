@@ -12,7 +12,15 @@ struct Swift_PlayApp: App {
     
     init() {
         
-        print("App started!")
+        var name, email, city:String
+
+        name = "Partha"
+        email = "partha@gmail.com"
+        city = "Chennai"
+        
+        print("App started! "+name+" "+email+" "+city)
+        
+        
         
     }
 
