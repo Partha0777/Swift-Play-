@@ -31,10 +31,7 @@ struct Swift_PlayApp: App {
         
         if let lastname = lastname {
             print("App started! " + lastname)
-        } else {
-            print("Lastname is nil")
         }
-
     }
 
     
