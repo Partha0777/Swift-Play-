@@ -28,6 +28,12 @@ struct Swift_PlayApp: App {
         var lastname:String?
         
         print("App started! " + (lastname ?? ""))
+        
+        if let lastname = lastname {
+            print("App started! " + lastname)
+        } else {
+            print("Lastname is nil")
+        }
 
     }
 
