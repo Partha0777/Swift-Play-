@@ -25,6 +25,10 @@ struct Swift_PlayApp: App {
         print("Hey Eeveryone! My age is \(age)")
         print("\(name.uppercased()) \(city.lowercased())")
         
+        var lastname:String?
+        
+        print("App started! " + (lastname ?? ""))
+
     }
 
     
