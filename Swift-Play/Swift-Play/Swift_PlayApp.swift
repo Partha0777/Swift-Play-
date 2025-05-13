@@ -13,6 +13,8 @@ struct Swift_PlayApp: App {
     init() {
         
         var name, email, city:String
+        
+        let age:Int = 30
 
         name = "Partha"
         email = "partha@gmail.com"
@@ -20,7 +22,7 @@ struct Swift_PlayApp: App {
         
         print("App started! "+name+" "+email+" "+city)
         
-        
+        print("Hey Eeveryone! My age is \(age)")
         
     }
 
