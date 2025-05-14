@@ -52,6 +52,13 @@ struct Swift_PlayApp: App {
         let dictionary: [String: Int] = ["a":1, "b":2, "c":3]
         print(String(dictionary["b"] ?? 0))
         
+        
+        let setdata :Set = ["a", "b", "c", "d" ,"a", "b"]
+        let setdataV2 :Set = ["f", "g", "c", "d" ,"a", "b"]
+        print(setdata.intersection(setdataV2))
+        print(setdata.union(setdataV2))
+        
+        
     }
 
     
