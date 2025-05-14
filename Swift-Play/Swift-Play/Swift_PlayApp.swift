@@ -42,9 +42,13 @@ struct Swift_PlayApp: App {
         
         var list: [String] = ["a", "b", "c"]
         list.reverse()
-        print(list.reversed())
         print(list)
-
+    
+        var listA: [Int] = [1, 2, 3]
+        var data = Array(listA.reversed())
+        print(data)
+        print(listA)
+        
     }
 
     
