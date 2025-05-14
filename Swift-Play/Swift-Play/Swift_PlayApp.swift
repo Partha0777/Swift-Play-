@@ -57,6 +57,7 @@ struct Swift_PlayApp: App {
         let setdataV2 :Set = ["f", "g", "c", "d" ,"a", "b"]
         print(setdata.intersection(setdataV2))
         print(setdata.union(setdataV2))
+        print(setdataV2.subtracting(setdata))
         
         
     }
