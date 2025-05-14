@@ -32,6 +32,19 @@ struct Swift_PlayApp: App {
         if let lastname = lastname {
             print("App started! " + lastname)
         }
+        
+        var count:Int?
+        
+        if let count = count{
+            print("Count started! \(count)")
+        }
+        
+        
+        var list: [String] = ["a", "b", "c"]
+        list.reverse()
+        print(list.reversed())
+        print(list)
+
     }
 
     
