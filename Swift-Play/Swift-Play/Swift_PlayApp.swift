@@ -59,8 +59,9 @@ struct Swift_PlayApp: App {
         print(setdata.union(setdataV2))
         print(setdataV2.subtracting(setdata))
         
-        var (String, Int) = ("Partha",30)
-        
+        var (name:String, age: Int) = ("Partha",30)
+        print(name)
+
         
         
     }
