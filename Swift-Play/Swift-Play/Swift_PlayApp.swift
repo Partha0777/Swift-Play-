@@ -62,8 +62,12 @@ struct Swift_PlayApp: App {
         var (name:String, age: Int) = ("Partha",30)
         print(name)
 
+        var dataS:String? = "Woowww"
+        var booldata:Bool? = true
         
-        
+        if let hello = dataS, let boold = booldata{
+            print("\(hello) - \(boold)")
+        }
     }
 
     
