@@ -73,11 +73,12 @@ struct Swift_PlayApp: App {
         let isActive: Bool = true
         let isUserExist: Bool = true
         
-        if isActive && isUserExist{
+        if isActive {
             print("Active")
-        }else{
+        } else if isUserExist{
+            print("User is exist but InActive")
+        } else{
             print("InActive")
-
         }
     }
 
