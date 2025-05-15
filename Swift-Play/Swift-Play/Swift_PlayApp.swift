@@ -68,6 +68,17 @@ struct Swift_PlayApp: App {
         if let hello = dataS, let boold = booldata{
             print("\(hello) - \(boold)")
         }
+        
+        
+        let isActive: Bool = true
+        let isUserExist: Bool = true
+        
+        if isActive && isUserExist{
+            print("Active")
+        }else{
+            print("InActive")
+
+        }
     }
 
     
