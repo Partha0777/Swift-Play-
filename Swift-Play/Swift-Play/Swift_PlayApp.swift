@@ -14,20 +14,7 @@ struct Swift_PlayApp: App {
         
        
         
-        var lastname:String?
-        
-        print("App started! " + (lastname ?? ""))
-        
-        if let lastname = lastname {
-            print("App started! " + lastname)
-        }
-        
-        var count:Int?
-        
-        if let count = count{
-            print("Count started! \(count)")
-        }
-        
+       
         
         var list: [String] = ["a", "b", "c"]
         list.reverse()
@@ -48,8 +35,7 @@ struct Swift_PlayApp: App {
         print(setdata.union(setdataV2))
         print(setdataV2.subtracting(setdata))
         
-        var (username:String, age: Int) = ("Partha",30)
-        print(username)
+        var (dlo:String, age: Int) = ("Partha",30)
 
         var dataS:String? = "Woowww"
         var booldata:Bool? = true
@@ -93,6 +79,23 @@ struct Swift_PlayApp: App {
         
         print("Hey Eeveryone! My age is \(age)")
         print("\(name.uppercased()) \(city.lowercased())")
+    }
+    
+    func nullableVar(){
+        var lastname:String?
+        
+        print("App started! " + (lastname ?? ""))
+        
+        if let lastname = lastname {
+            print("App started! " + lastname)
+        }
+        
+        var count:Int?
+        
+        if let count = count{
+            print("Count started! \(count)")
+        }
+        
     }
 
     
