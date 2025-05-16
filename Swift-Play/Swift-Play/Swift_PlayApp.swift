@@ -35,7 +35,8 @@ struct Swift_PlayApp: App {
         print(setdata.union(setdataV2))
         print(setdataV2.subtracting(setdata))
         
-        var (dlo:String, age: Int) = ("Partha",30)
+        var (dlo,age) = ("Partha",30)
+        print("\(dlo) - \(age)")
 
         var dataS:String? = "Woowww"
         var booldata:Bool? = true
