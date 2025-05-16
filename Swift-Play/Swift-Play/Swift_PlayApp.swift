@@ -11,20 +11,7 @@ import SwiftUI
 struct Swift_PlayApp: App {
     
     init() {
-        
        
-        
-       
-        
-        var list: [String] = ["a", "b", "c"]
-        list.reverse()
-        print(list)
-    
-        var listA: [Int] = [1, 2, 3]
-        var data = Array(listA.reversed())
-        print(data)
-        print(listA)
-        
         let dictionary: [String: Int] = ["a":1, "b":2, "c":3]
         print(String(dictionary["b"] ?? 0))
         
@@ -97,6 +84,17 @@ struct Swift_PlayApp: App {
             print("Count started! \(count)")
         }
         
+    }
+    
+    func listExamplet(){
+        var list: [String] = ["a", "b", "c"]
+        list.reverse()
+        print(list)
+    
+        var listA: [Int] = [1, 2, 3]
+        var data = Array(listA.reversed())
+        print(data)
+        print(listA)
     }
 
     
