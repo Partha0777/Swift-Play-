@@ -80,6 +80,14 @@ struct Swift_PlayApp: App {
         } else{
             print("InActive")
         }
+        
+        
+        var country:String?
+        
+        if let countryName = country{
+            print(countryName)
+        }
+    
     }
 
     
