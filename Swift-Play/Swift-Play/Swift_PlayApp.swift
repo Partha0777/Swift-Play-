@@ -12,18 +12,7 @@ struct Swift_PlayApp: App {
     
     init() {
         
-        var name, email, city:String
-        
-        let age:Int = 30
-
-        name = "Partha"
-        email = "partha@gmail.com"
-        city = "Chennai"
-        
-        print("App started! "+name+" "+email+" "+city)
-        
-        print("Hey Eeveryone! My age is \(age)")
-        print("\(name.uppercased()) \(city.lowercased())")
+       
         
         var lastname:String?
         
@@ -59,8 +48,8 @@ struct Swift_PlayApp: App {
         print(setdata.union(setdataV2))
         print(setdataV2.subtracting(setdata))
         
-        var (name:String, age: Int) = ("Partha",30)
-        print(name)
+        var (username:String, age: Int) = ("Partha",30)
+        print(username)
 
         var dataS:String? = "Woowww"
         var booldata:Bool? = true
@@ -88,6 +77,22 @@ struct Swift_PlayApp: App {
             print(countryName)
         }
     
+    }
+    
+    
+    func variables(){
+        var name, email, city:String
+        
+        let age:Int = 30
+
+        name = "Partha"
+        email = "partha@gmail.com"
+        city = "Chennai"
+        
+        print("App started! "+name+" "+email+" "+city)
+        
+        print("Hey Eeveryone! My age is \(age)")
+        print("\(name.uppercased()) \(city.lowercased())")
     }
 
     
