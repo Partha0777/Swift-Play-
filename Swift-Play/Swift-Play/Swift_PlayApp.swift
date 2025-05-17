@@ -13,6 +13,7 @@ struct Swift_PlayApp: App {
     init() {
         variables()
         nullableVar()
+        listExamplet()
        
         let dictionary: [String: Int] = ["a":1, "b":2, "c":3]
         print(String(dictionary["b"] ?? 0))
