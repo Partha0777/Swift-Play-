@@ -11,6 +11,8 @@ import SwiftUI
 struct Swift_PlayApp: App {
     
     init() {
+        variables()
+        nullableVar()
        
         let dictionary: [String: Int] = ["a":1, "b":2, "c":3]
         print(String(dictionary["b"] ?? 0))
@@ -31,7 +33,6 @@ struct Swift_PlayApp: App {
         if let hello = dataS, let boold = booldata{
             print("\(hello) - \(boold)")
         }
-        
         
         let isActive: Bool = true
         let isUserExist: Bool = true
