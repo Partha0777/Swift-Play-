@@ -14,7 +14,8 @@ struct Swift_PlayApp: App {
         variables()
         nullableVar()
         listExamplet()
-       
+        dictionary()
+        
         let dictionary: [String: Int] = ["a":1, "b":2, "c":3]
         print(String(dictionary["b"] ?? 0))
         
@@ -99,6 +100,11 @@ struct Swift_PlayApp: App {
         print(listA)
     }
 
+    
+    func dictionary(){
+        let dictionary: [String: Int] = ["a":1, "b":2, "c":3]
+        print(String(dictionary["b"] ?? 0))
+    }
     
     var body: some Scene {
         WindowGroup {
