@@ -11,10 +11,12 @@ import SwiftUI
 struct Swift_PlayApp: App {
     
     init() {
+        
         variables()
         nullableVar()
         listExamplet()
         dictionary()
+        loops()
         
         let setdata :Set = ["a", "b", "c", "d" ,"a", "b"]
         let setdataV2 :Set = ["f", "g", "c", "d" ,"a", "b"]
@@ -100,6 +102,20 @@ struct Swift_PlayApp: App {
     func dictionary(){
         let dictionary: [String: Int] = ["a":1, "b":2, "c":3]
         print(String(dictionary["b"] ?? 0))
+    }
+    
+    func loops(){
+        
+        for i in 1...5 {
+            
+            if i <= 2 {
+                print("It's less than 2")
+            }else if i == 3 {
+                print("It's equal to 3")
+            } else{
+                print("It's greater than 2")
+            }
+        }
     }
     
     var body: some Scene {
