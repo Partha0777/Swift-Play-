@@ -18,9 +18,10 @@ struct Swift_PlayApp: App {
         dictionary()
         forLoops()
         whileLoops()
-        let (value, operationName) = calculationWithName(num1: 5, num2: 2, operation: "multiply")
-                                      
-        print("Calculation value is \(value) and operation name is \(operationName)")
+        functionWithTupleReturnType()
+        
+        higherOrder(operation: calculation)
+       
         
         let setdata :Set = ["a", "b", "c", "d" ,"a", "b"]
         let setdataV2 :Set = ["f", "g", "c", "d" ,"a", "b"]
@@ -141,6 +142,11 @@ struct Swift_PlayApp: App {
         }
     }
     
+    func functionWithTupleReturnType(){
+        let (value, operationName) = calculationWithName(num1: 5, num2: 2, operation: "multiply")
+        print("Calculation value is \(value) and operation name is \(operationName)")
+    }
+    
     func calculationWithName(num1:Int, num2: Int, operation:String) -> (Int,String) {
         switch operation{
         case "add": return (num1 + num2, operation)
@@ -151,6 +157,11 @@ struct Swift_PlayApp: App {
         }
     }
     
+    
+    func higherOrder(operation: (Int, Int, String) -> Int){
+        let value = operation(2,5, "add")
+        print("Higher Order -> \(value)")
+    }
     
     var body: some Scene {
         WindowGroup {
