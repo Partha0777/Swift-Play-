@@ -16,7 +16,8 @@ struct Swift_PlayApp: App {
         nullableVar()
         listExamplet()
         dictionary()
-        loops()
+        forLoops()
+        whileLoops()
         
         let setdata :Set = ["a", "b", "c", "d" ,"a", "b"]
         let setdataV2 :Set = ["f", "g", "c", "d" ,"a", "b"]
@@ -104,7 +105,7 @@ struct Swift_PlayApp: App {
         print(String(dictionary["b"] ?? 0))
     }
     
-    func loops(){
+    func forLoops(){
         
         for i in 1...5 {
             
@@ -115,6 +116,14 @@ struct Swift_PlayApp: App {
             } else{
                 print("It's greater than 2")
             }
+        }
+    }
+    
+    func whileLoops(){
+        var i = 1
+        while( i <= 5){
+            print("Number is \(i)")
+            i += 1
         }
     }
     
