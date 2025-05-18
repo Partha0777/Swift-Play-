@@ -18,6 +18,7 @@ struct Swift_PlayApp: App {
         dictionary()
         forLoops()
         whileLoops()
+        print("Calculation is \(calculation(num1: 5, num2: 2, operation: "multiply"))")
         
         let setdata :Set = ["a", "b", "c", "d" ,"a", "b"]
         let setdataV2 :Set = ["f", "g", "c", "d" ,"a", "b"]
@@ -124,6 +125,17 @@ struct Swift_PlayApp: App {
         while( i <= 5){
             print("Number is \(i)")
             i += 1
+        }
+    }
+    
+    
+    func calculation(num1:Int, num2: Int, operation:String) -> Int {
+        switch operation{
+            case "add": return num1 + num2
+            case "subtract" : return num1 - num2
+            case "divide" : return num1 / num2
+            case "multiply" : return num1 * num2
+        default : return 0
         }
     }
     
