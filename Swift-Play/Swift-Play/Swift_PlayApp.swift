@@ -172,6 +172,15 @@ struct Swift_PlayApp: App {
         
         print(closureExample("Kan"))
         
+        
+        let nameList = ["Kan", "Rock", "Green", "Steve", "Elon"]
+        
+        let soretedName = nameList.sorted{(name1:String, name2:String) -> Bool in
+            return name1 < name2
+        }
+        
+        print(soretedName)
+        
     }
     
     var body: some Scene {
