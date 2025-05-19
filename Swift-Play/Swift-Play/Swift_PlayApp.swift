@@ -185,7 +185,7 @@ struct Swift_PlayApp: App {
         
     }
     
-    
+    //AutoClosure
     func printNumbers(result:@autoclosure () -> Void){
         print("One")
         print("Two")
