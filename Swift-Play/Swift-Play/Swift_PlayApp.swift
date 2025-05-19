@@ -166,7 +166,7 @@ struct Swift_PlayApp: App {
     
     func closeureExample(){
         
-        var closureExample = { (data:String) -> String in
+        let closureExample = { (data:String) -> String in
             return "Hello \(data)"
         }
         
@@ -181,6 +181,15 @@ struct Swift_PlayApp: App {
         
         print(soretedName)
         
+        printNumbers(result: print("Three"))
+        
+    }
+    
+    
+    func printNumbers(result:@autoclosure () -> Void){
+        print("One")
+        print("Two")
+        result()
     }
     
     var body: some Scene {
