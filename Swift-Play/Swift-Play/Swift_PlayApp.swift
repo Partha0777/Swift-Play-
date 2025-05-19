@@ -12,6 +12,7 @@ struct Swift_PlayApp: App {
     
     init() {
         
+    
         variables()
         nullableVar()
         listExamplet()
@@ -21,7 +22,7 @@ struct Swift_PlayApp: App {
         functionWithTupleReturnType()
         
         higherOrder(operation: calculation)
-       
+        closeureExample()
         
         let setdata :Set = ["a", "b", "c", "d" ,"a", "b"]
         let setdataV2 :Set = ["f", "g", "c", "d" ,"a", "b"]
@@ -161,6 +162,16 @@ struct Swift_PlayApp: App {
     func higherOrder(operation: (Int, Int, String) -> Int){
         let value = operation(2,5, "add")
         print("Higher Order -> \(value)")
+    }
+    
+    func closeureExample(){
+        
+        var closureExample = { (data:String) -> String in
+            return "Hello \(data)"
+        }
+        
+        print(closureExample("Kan"))
+        
     }
     
     var body: some Scene {
