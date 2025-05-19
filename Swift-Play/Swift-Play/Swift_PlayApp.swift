@@ -190,6 +190,8 @@ struct Swift_PlayApp: App {
         print("One")
         print("Two")
         result()
+        print("Four")
+
     }
     
     var body: some Scene {
