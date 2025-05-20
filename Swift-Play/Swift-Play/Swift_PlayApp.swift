@@ -24,6 +24,8 @@ struct Swift_PlayApp: App {
         higherOrder(operation: calculation)
         closeureExample()
         
+        enumsExample()
+        
         let setdata :Set = ["a", "b", "c", "d" ,"a", "b"]
         let setdataV2 :Set = ["f", "g", "c", "d" ,"a", "b"]
         print(setdata.intersection(setdataV2))
@@ -198,9 +200,36 @@ struct Swift_PlayApp: App {
         
     }
     
+    
+    func enumsExample(){
+        
+        let hero = Marvel.IronMan
+        
+        if(hero == .IronMan){
+            print("Yes!! it's Ironman")
+        }else{
+            print("No! it's Ironman")
+        }
+    }
+    
+    
+    
+    
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
+}
+
+enum Marvel{
+    case CaptainAmerica
+    case IronMan
+    case SpriderMan
+}
+
+indirect enum ArithmeticOperation{
+    case Num(Int)
+    case Add(ArithmeticOperation,ArithmeticOperation)
 }
