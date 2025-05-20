@@ -210,8 +210,26 @@ struct Swift_PlayApp: App {
         }else{
             print("No! it's Ironman")
         }
+        
+        let a = ArithmeticOperation.Num(20)
+        let b = ArithmeticOperation.Num(7)
+        
+        let operation = ArithmeticOperation.Add(a, b)
+        
+        print("Result \(evaluate(opt: operation))")
     }
     
+    
+    func evaluate(opt:ArithmeticOperation) -> Int{
+        switch opt{
+        case .Num(let value):
+            return value
+            
+        case .Add(let first, let second):
+            return evaluate(opt: first) + evaluate(opt: second)
+        }
+        
+    }
     
     
     
