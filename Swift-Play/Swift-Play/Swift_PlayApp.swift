@@ -223,7 +223,6 @@ struct Swift_PlayApp: App {
         
         let a = ArithmeticOperation.Num(20)
         let b = ArithmeticOperation.Num(7)
-        
         let operation = ArithmeticOperation.Add(a, b)
         
         print("Result \(evaluate(opt: operation))")
