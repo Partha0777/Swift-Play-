@@ -194,6 +194,10 @@ struct Swift_PlayApp: App {
 
     }
     
+    func dataTask(with url:URL, completion: @escaping(Data?, URLResponse?, Error?) -> Void ) -> Void{
+        
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
