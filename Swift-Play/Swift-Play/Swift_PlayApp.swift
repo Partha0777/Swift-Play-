@@ -232,8 +232,6 @@ struct Swift_PlayApp: App {
     }
     
     
-    
-    
     var body: some Scene {
         WindowGroup {
             ContentView()
