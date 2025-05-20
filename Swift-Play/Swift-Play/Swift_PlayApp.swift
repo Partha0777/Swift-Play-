@@ -203,7 +203,17 @@ struct Swift_PlayApp: App {
     
     func enumsExample(){
         
-        let hero = Marvel.IronMan
+        var hero = Marvel.IronMan
+        
+        switch hero{
+        case .CaptainAmerica:
+            print("Captain")
+        case .IronMan:
+            print("Iron")
+        case .SpriderMan:
+            print("Sprider")
+        }
+        
         
         if(hero == .IronMan){
             print("Yes!! it's Ironman")
