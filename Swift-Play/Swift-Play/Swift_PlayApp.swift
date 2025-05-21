@@ -226,6 +226,10 @@ struct Swift_PlayApp: App {
         let operation = ArithmeticOperation.Add(a, b)
         
         print("Result \(evaluate(opt: operation))")
+        
+        var movie = MarvelMovies(name: "Avengers", year: 2017)
+        
+        print("Movie \(movie.name)")
     }
     
     
