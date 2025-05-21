@@ -227,7 +227,7 @@ struct Swift_PlayApp: App {
         
         print("Result \(evaluate(opt: operation))")
         
-        var movie = MarvelMovies(name: "Avengers", year: 2017)
+        let movie = MarvelMovies(name: "Avengers", year: 2017)
         
         print("Movie \(movie.name)")
     }
