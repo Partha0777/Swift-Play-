@@ -248,6 +248,16 @@ struct Swift_PlayApp: App {
     }
 }
 
+struct MarvelMovies{
+    var name:String
+    var year:Int
+    
+    init(name: String, year: Int) {
+        self.name = name
+        self.year = year
+    }
+}
+
 enum Marvel{
     case CaptainAmerica
     case IronMan
