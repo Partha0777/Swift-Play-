@@ -11,17 +11,6 @@ import SwiftUI
 struct Swift_PlayApp: App {
     
     init() {
-        
-        var alpha = PubGetObs()
-        
-        alpha.age = 12
-        
-        var dcMovie = DcMovies()
-        
-        dcMovie.year = 20
-        
-        print("Value is \(dcMovie.finalPoint)")
-    
         variables()
         nullableVar()
         listExamplet()
@@ -34,6 +23,18 @@ struct Swift_PlayApp: App {
         closeureExample()
         
         enumsExample()
+        
+        var alpha = PubGetObs()
+        
+        alpha.age = 12
+        
+        var dcMovie = DcMovies()
+        
+        dcMovie.year = 20
+        
+        print("Value is \(dcMovie.finalPoint)")
+        
+        
         
         let setdata :Set = ["a", "b", "c", "d" ,"a", "b"]
         let setdataV2 :Set = ["f", "g", "c", "d" ,"a", "b"]
