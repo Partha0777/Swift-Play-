@@ -214,7 +214,6 @@ struct Swift_PlayApp: App {
             print("Sprider")
         }
         
-        
         if(hero == .IronMan){
             print("Yes!! it's Ironman")
         }else{
