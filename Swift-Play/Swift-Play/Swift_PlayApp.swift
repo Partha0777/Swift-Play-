@@ -12,6 +12,11 @@ struct Swift_PlayApp: App {
     
     init() {
         
+        var dcMovie = DcMovies()
+        
+        dcMovie.year = 20
+        
+        print("Value is \(dcMovie.finalPoint)")
     
         variables()
         nullableVar()
@@ -270,4 +275,24 @@ enum Marvel{
 indirect enum ArithmeticOperation{
     case Num(Int)
     case Add(ArithmeticOperation,ArithmeticOperation)
+}
+
+class DcMovies{
+    
+    var name:String?
+    
+    var point:Int?
+    var finalPoint:Int?
+    var year:Int{
+        
+        get{
+            return point! * 2
+        }
+        
+        set(data){
+            finalPoint = data*2
+        }
+        
+    }
+    
 }
