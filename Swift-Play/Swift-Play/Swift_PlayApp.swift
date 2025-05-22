@@ -303,7 +303,6 @@ class DcMovies{
 
 
 class PubGetObs{
-    
     var age:Int = 10 {
         willSet{
             print("New value is - $\(newValue)")
