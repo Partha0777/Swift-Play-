@@ -12,6 +12,10 @@ struct Swift_PlayApp: App {
     
     init() {
         
+        var alpha = PubGetObs()
+        
+        alpha.age = 12
+        
         var dcMovie = DcMovies()
         
         dcMovie.year = 20
@@ -295,4 +299,18 @@ class DcMovies{
         
     }
     
+}
+
+
+class PubGetObs{
+    
+    var age:Int = 10 {
+        willSet{
+            print("New value is - $\(newValue)")
+        }
+        
+        didSet{
+            print("Old value is - $\(oldValue)")
+        }
+    }
 }
