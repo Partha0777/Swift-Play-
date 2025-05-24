@@ -327,3 +327,17 @@ class Circle{
     
     
 }
+
+class Shape{
+    
+    func measure(){
+        
+    }
+}
+
+class Rectangle: Shape{
+    
+    override func measure() {
+        
+    }
+}
