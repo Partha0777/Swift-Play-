@@ -305,6 +305,7 @@ class DcMovies{
 
 class PubGetObs{
     var age:Int = 10 {
+        
         willSet{
             print("New value is - $\(newValue)")
         }
@@ -313,4 +314,16 @@ class PubGetObs{
             print("Old value is - $\(oldValue)")
         }
     }
+}
+
+class Circle{
+    
+    static var size = 20
+    
+    
+    class func area(radius:Int) -> Int{
+        return self.size * radius
+    }
+    
+    
 }
