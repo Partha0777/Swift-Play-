@@ -330,12 +330,20 @@ class Circle{
 
 class Shape{
     
+    var value: Double {
+        return 0
+    }
+    
     func measure(){
         
     }
 }
 
 class Rectangle: Shape{
+    
+    override var value: Double{
+        return 24
+    }
     
     override func measure() {
         
