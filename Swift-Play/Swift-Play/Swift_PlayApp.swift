@@ -334,10 +334,11 @@ class Shape{
         return 0
     }
     
-    func measure(){
-        
+    func measure() -> Double{
+        return value * 2
     }
 }
+
 
 class Rectangle: Shape{
     
@@ -345,7 +346,7 @@ class Rectangle: Shape{
         return 24
     }
     
-    override func measure() {
-        
+    override func measure() -> Double {
+        return 24*4
     }
 }
