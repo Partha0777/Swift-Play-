@@ -382,7 +382,21 @@ class Box{
         
     }
     
+    func checkOrderSttatus(orderId:Int){
+        
+        do{
+           try makeOrder(name: "", orderId: orderId)
+        }catch ErrorType.OrderError{
+            print("No order found")
+        }catch{
+            print(error)
+        }
+    }
+    
 }
+
+
+
 
 enum ErrorType: Error{
     case UserError
