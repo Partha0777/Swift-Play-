@@ -368,6 +368,11 @@ class Box{
         self.name = "\(fname) \(lname)"
     }
     
+    deinit{
+        print("Deinit Called....")
+        
+    }
+    
 }
 
 
