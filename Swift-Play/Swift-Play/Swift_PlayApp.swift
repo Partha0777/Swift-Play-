@@ -11,6 +11,9 @@ import SwiftUI
 struct Swift_PlayApp: App {
     
     init() {
+        
+        var box = Box(name: "Rick")
+        
         variables()
         nullableVar()
         listExamplet()
@@ -356,10 +359,12 @@ class Box{
     var name:String
     
     init(name: String) {
+        print("Init 1")
         self.name = name
     }
     
     init(fname:String, lname:String){
+        print("Init 2")
         self.name = "\(fname) \(lname)"
     }
     
