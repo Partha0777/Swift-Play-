@@ -350,3 +350,19 @@ class Rectangle: Shape{
         return 24*4
     }
 }
+
+class Box{
+    
+    var name:String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    init(fname:String, lname:String){
+        self.name = "\(fname) \(lname)"
+    }
+    
+}
+
+
