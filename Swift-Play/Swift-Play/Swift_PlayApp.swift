@@ -373,6 +373,21 @@ class Box{
         
     }
     
+    func makeOrder(name:String, orderId:Int) throws{
+        if name == ""{
+            throw ErrorType.UserError
+        } else if orderId <= 0 {
+            throw ErrorType.OrderError
+        }
+        
+    }
+    
+}
+
+enum ErrorType: Error{
+    case UserError
+    case OrderError
+    case UnknownError
 }
 
 
