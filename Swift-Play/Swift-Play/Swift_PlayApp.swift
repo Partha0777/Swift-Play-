@@ -395,9 +395,6 @@ class Box{
     
 }
 
-
-
-
 enum ErrorType: Error{
     case UserError
     case OrderError
