@@ -27,15 +27,7 @@ struct Swift_PlayApp: App {
         
         enumsExample()
         
-        var alpha = PubGetObs()
-        
-        alpha.age = 12
-        
-        var dcMovie = DcMovies()
-        
-        dcMovie.year = 20
-        
-        print("Value is \(dcMovie.finalPoint)")
+       
         
         
         
@@ -73,6 +65,19 @@ struct Swift_PlayApp: App {
             print(countryName)
         }
     
+    }
+    
+    func exampleOfClass(){
+        var alpha = PubGetObs()
+        
+        alpha.age = 12
+        
+        var dcMovie = DcMovies()
+        
+        dcMovie.year = 20
+        
+        print("Value is \(dcMovie.finalPoint)")
+        
     }
     
     
