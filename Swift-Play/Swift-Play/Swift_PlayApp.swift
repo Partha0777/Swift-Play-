@@ -27,15 +27,9 @@ struct Swift_PlayApp: App {
         
         enumsExample()
         
-       
+        exampleOfSet()
         
         
-        
-        let setdata :Set = ["a", "b", "c", "d" ,"a", "b"]
-        let setdataV2 :Set = ["f", "g", "c", "d" ,"a", "b"]
-        print(setdata.intersection(setdataV2))
-        print(setdata.union(setdataV2))
-        print(setdataV2.subtracting(setdata))
         
         var (dlo,age) = ("Partha",30)
         print("\(dlo) - \(age)")
@@ -65,6 +59,15 @@ struct Swift_PlayApp: App {
             print(countryName)
         }
     
+    }
+    
+    func exampleOfSet(){
+        
+        let setdata :Set = ["a", "b", "c", "d" ,"a", "b"]
+        let setdataV2 :Set = ["f", "g", "c", "d" ,"a", "b"]
+        print(setdata.intersection(setdataV2))
+        print(setdata.union(setdataV2))
+        print(setdataV2.subtracting(setdata))
     }
     
     func exampleOfClass(){
